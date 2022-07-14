@@ -1,0 +1,144 @@
+@import url(./reset.css);
+
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "NanumSquare";
+}
+
+.container {
+  width: 970px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 126px 0;
+}
+
+.container .title {
+  margin-bottom: 20px;
+}
+
+.container .title h1 {
+  color: #101010;
+  font-size: 48px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.container .title h1 p:last-child {
+  font-weight: 700;
+}
+
+.container .contents {
+  width: 100%;
+  height: 460px;
+  position: absolute;
+  left: 0;
+  padding: 120px 0;
+  margin-top: -50px;
+}
+
+.container .contents .swiper .swiper-slide .card {
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 7%);
+  border: solid 1px #e0e0e0;
+  background-color: #ffffff;
+}
+
+.card .card-user {
+  padding: 20px 30px;
+  margin-bottom: 10px;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card .card-user .user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 10px;
+  background-color: #eee;
+  float: left;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .card-image {
+  width: 100%;
+  height: 320px;
+  background: #ccc;
+}
+
+.card .card-image > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .card-info {
+  display: flex;
+  font-size: 15px;
+  display: flex;
+  font-size: 15px;
+  height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.card .info-time {
+  color: #aaa;
+}
+
+.swiper .swiper-button {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.9;
+  margin: 0 32px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: 900;
+  color: rgb(175, 175, 175);
+}
+
+button#reload {
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 12px #0000002e;
+  transition: box-shadow 0.2s;
+}
+
+button#reload img {
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+button#reload:hover {
+  box-shadow: 0px 0px 12px #00000052;
+}
+
+button#reload:hover img {
+  opacity: 0.8;
+}
