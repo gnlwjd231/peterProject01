@@ -1,7 +1,7 @@
-<h1>팻트너 채용과제 01</h1>
-<h2>Carousel UI 구현</h2>
+<h1>팻트너 채용과제 01 - Carousel UI</h1>
 <br/>
 project URL : https://gnlwjd231.github.io/peterProject01/
+<br/>
 <br/>
 HTML5 / CSS3 / JavaScript / jQuery / ajax 사용
 <br />
