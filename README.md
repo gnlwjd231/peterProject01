@@ -1,4 +1,4 @@
-<h1>팻트너 채용과제 01 - Carousel UI</h1>
+<h1>펫트너 채용과제 01 - Carousel UI</h1>
 <h2>project URL : <a href="https://gnlwjd231.github.io/peterProject01/">https://gnlwjd231.github.io/peterProject01/</a></h2>
 <br/>
 <br/>
