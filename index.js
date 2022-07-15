@@ -25,20 +25,32 @@ function uploadFeed() {
       alert("통신실패");
     },
   }).done(function (json) {
+    console.log(json);
     swiper.destroy();
     $(".swiper-wrapper").html(` `);
     for (i in json) {
+      console.log(json[i].petner);
       let infoTime = moment(json[i].created_at).fromNow();
       let cardTemplate = `
         <div class="swiper-slide" draggable=false >
             <div class="card">
-              <div class="card-user">
-                  <div class="user-img" style="background-image:url(${json[i].petner.image});"> </div>
+            ${json[i].petner === undefined ? 
+              `<div class="card-user">
+                  <div class="user-img" style="background-image:#eee"> </div>
+                  <div class="user-info">
+                      <p class="user-name">홍길동</p>
+                      <p class="user-type">수의대생</p>
+                  </div>
+              </div>`
+              :
+              `<div class="card-user">
+                  <div class="user-img" style="background-image:url(${json[i].petner.image === null ? `#eee` :json[i].petner.image});"> </div>
                   <div class="user-info">
                       <p class="user-name">${json[i].petner.name}</p>
                       <p class="user-type">수의대생</p>
                   </div>
-              </div>
+              </div>`
+            }
               <div class="card-image">
                   <div style=" background-image:url(${json[i].image}); ">
                   </div>
